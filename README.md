@@ -1,7 +1,7 @@
 # N8N ViralFlow
-
 A fully automated n8n-based pipeline that transforms user input into short, scroll‑stopping videos with hooks, dynamic visuals, and dramatic TTS narration and autmatically uploads it on their Youtube.
-<br>
+
+![image alt](https://github.com/PrabhanshuKamal2121/N8N-ViralFlow/blob/ac874b4bda948819321a8e0c4e5a8f531ca54a8a/N8N%20ViralFlow.png)
 
 ---
 ## 🛠️ Tech Stack
