@@ -1,0 +1,1876 @@
+{
+  "name": "Github Project",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Brain Rot 5000",
+        "formDescription": "=Brain rot is a colloquial term that refers to a perceived decline in cognitive abilities, attention span, and critical thinking due to prolonged exposure to overstimulating, unproductive, or low-effort digital content.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "The Main Topic",
+              "fieldType": "textarea",
+              "placeholder": "Amazing world of cats",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Duration",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "30 Second"
+                  },
+                  {
+                    "option": "1 Minute"
+                  },
+                  {
+                    "option": "2 Minutes"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Generative Style",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Lego"
+                  },
+                  {
+                    "option": "Minecraft"
+                  },
+                  {
+                    "option": "Disney Pixar"
+                  },
+                  {
+                    "option": "Hand-Drawn"
+                  },
+                  {
+                    "option": "Chibi"
+                  },
+                  {
+                    "option": "Anime"
+                  },
+                  {
+                    "option": "Hyper-Realistic"
+                  },
+                  {
+                    "option": "Cyberpunk"
+                  },
+                  {
+                    "option": "fantasy"
+                  }
+                ]
+              },
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {
+          "appendAttribution": false,
+          "buttonLabel": "Ahow - Let's do i",
+          "respondWithOptions": {
+            "values": {
+              "formSubmittedText": "It may take 10-15 minutes"
+            }
+          },
+          "ignoreBots": true,
+          "customCss": "/* Import funky fonts - FIXED SYNTAX */\n@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Black+Ops+One&family=Bungee&display=swap');\n\n:root {\n  /* Chaotic Anti-Design Colors */\n  --golden-chaos: #FFD700;\n  --neon-pink: #FF00FF;\n  --electric-blue: #00FFFF;\n  --toxic-green: #39FF14;\n  --hot-orange: #FF4500;\n  --purple-madness: #8A2BE2;\n  --lime-shock: #32CD32;\n  --cyber-yellow: #FFFF00;\n  --red-alert: #FF0000;\n  --black-void: #000000;\n  --white-chaos: #FFFFFF;\n\n    /* Funky Dimensions */\n  --container-width: 880px;\n  --submit-btn-height: 86px;\n  --checkbox-size: 24px;\n  /* Chunky Typography */\n  --font-chaos: 'Black Ops One', cursive;\n  --font-bubble: 'Fredoka', cursive;\n  --font-street: 'Bungee', cursive;\n  \n  /* FIXED Spacing */\n  --chaos-space: 15px;\n  --wild-space: 25px;\n  --insane-space: 35px;\n  \n  /* FIXED Dimensions */\n  --container-max-width: 800px;\n  --submit-btn-height: 60px;\n}\n\n/* Chaotic Reset */\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n/* Anti-Design Body */\nbody {\n  background: var(--golden-chaos);\n  font-family: var(--font-bubble);\n  min-height: 100vh;\n  color: var(--black-void);\n  padding: 20px;\n  overflow-x: auto; /* FIXED: was wrap */\n}\n\n/* FIXED Container */\n.form-container,\n[class*=\"form-container\"] {\n  width: 100%;\n  max-width: var(--container-max-width);\n  margin: 0 auto;\n  padding: var(--chaos-space);\n  transform: rotate(-0.2deg); /* REDUCED rotation */\n}\n\n/* FIXED Form Card */\n.form-card,\nform,\n[class*=\"form\"] {\n  background: var(--white-chaos);\n  border: 5px solid var(--black-void);\n  border-radius: 0;\n  padding: var(--insane-space);\n  position: relative;\n  transform: rotate(0.1deg); /* REDUCED rotation */\n  box-shadow: \n    10px 10px 0px var(--neon-pink),\n    20px 20px 0px var(--electric-blue);\n  display: block; /* CHANGED from grid to block */\n  width: 100%;\n  overflow: visible;\n}\n\n/* FIXED Header */\n.form-header,\nh1, h2, h3 {\n  font-family: var(--font-chaos);\n  font-size: 2.5rem; /* REDUCED from 3rem */\n  color: var(--black-void);\n  text-align: center;\n  margin-bottom: var(--wild-space);\n  text-transform: uppercase;\n  letter-spacing: 3px; /* REDUCED from 5px */\n  line-height: 1.1; /* FIXED from 0.8 */\n  background: linear-gradient(45deg, \n    var(--cyber-yellow) 0%, \n    var(--neon-pink) 25%, \n    var(--electric-blue) 50%, \n    var(--toxic-green) 75%, \n    var(--hot-orange) 100%);\n  background-size: 200% 200%; /* FIXED from 30% 30% */\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n  transform: rotate(-0.5deg);\n  border: 4px dashed var(--purple-madness);\n  padding: var(--chaos-space);\n}\n\n/* FIXED Description */\n.form-description,\n\n\n\n/* FIXED Form Groups */\n.form-group,\n.field-group,\n[class*=\"field\"] {\n  margin-bottom: var(--wild-space);\n  position: relative;\n  transform: rotate(0.1deg); /* REDUCED rotation */\n  width: 100%; /* ADDED */\n}\n\n.form-group:nth-child(even) {\n  transform: rotate(-0.1deg);\n}\n\n.form-group:nth-child(3n) {\n  transform: rotate(0.2deg);\n}\n\n/* FIXED Labels */\nlabel,\n.form-label,\n[class*=\"label\"] {\n  display: block;\n  font-family: var(--font-bubble);\n  font-size: 1rem; /* REDUCED from 1.1rem */\n  font-weight: bold;\n  color: var(--black-void);\n  margin-bottom: 8px; /* REDUCED from 10px */\n  height: auto; /* FIXED: removed 200px height */\n  text-transform: uppercase;\n  background: var(--toxic-green);\n  padding: 12px 15px; /* FIXED: reduced from 50px */\n  border: 3px solid var(--black-void);\n  transform: rotate(-0.2deg);\n  box-shadow: 4px 4px 0px var(--neon-pink);\n  letter-spacing: 1px; /* REDUCED from 2px */\n  text-align: center;\n  width: 100%; /* ADDED */\n}\n\n/* FIXED required indicator */\nlabel[required]::after,\n.required::after,\n[required] + label::after {\n  content: '💥';\n  font-size: 1.2rem; /* REDUCED from 1.5rem */\n  margin-left: 6px; /* REDUCED from 8px */\n}\n\n/* FIXED Input Fields */\ninput,\ntextarea,\nselect,\n.form-input,\n[class*=\"input\"] {\n  width: 100%; /* FIXED: removed 880px fixed width */\n  padding: 15px; /* REDUCED from 18px */\n  height: auto; /* FIXED: removed 900px height */\n  border: 4px solid var(--black-void);\n  border-radius: 0;\n  font-size: 1rem; /* REDUCED from 1.1rem */\n  font-family: var(--font-bubble);\n  font-weight: bold;\n  color: var(--black-void);\n  background: var(--white-chaos);\n  transform: rotate(0.05deg); /* REDUCED rotation */\n  box-shadow: \n    inset 3px 3px 0px var(--electric-blue),\n    5px 5px 0px var(--hot-orange);\n  margin-bottom: 10px; /* ADDED spacing */\n}\n\ninput:nth-child(even),\ntextarea:nth-child(even),\nselect:nth-child(even) {\n  transform: rotate(-0.05deg);\n  box-shadow: \n    inset 3px 3px 0px var(--neon-pink),\n    5px 5px 0px var(--purple-madness);\n}\n\n\n/* FIXED placeholders */\ninput::placeholder,\ntextarea::placeholder {\n  color: var(--purple-madness);\n  font-weight: bold;\n  opacity: 0.8; /* REDUCED from 1 */\n}\n\n/* FIXED Focus States */\ninput:focus,\ntextarea:focus,\nselect:focus {\n  outline: none;\n  border-color: var(--red-alert);\n  background: var(--cyber-yellow);\n  transform: rotate(0deg) scale(1.01); /* REDUCED scale */\n  box-shadow: \n    inset 3px 3px 0px var(--toxic-green),\n    6px 6px 0px var(--neon-pink),\n    9px 9px 0px var(--electric-blue);\n}\n\n/* FIXED Textarea */\ntextarea {\n  min-height: 100px; /* REDUCED from 220px */\n  resize: vertical;\n  background: var(--white-chaos);\n}\n\n/* FIXED Select */\nselect {\n  cursor: pointer;\n  appearance: none;\n  background: var(--white-chaos) url(\"data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e\") no-repeat;\n  background-position: right 15px center;\n  background-size: 18px; /* REDUCED from 20px */\n  padding-right: 45px; /* REDUCED from 50px */\n}\n\nselect option {\n  background: var(--toxic-green);\n  color: var(--black-void);\n  font-weight: bold;\n  padding: 12px; /* REDUCED from 15px */\n}\n\n/* FIXED Submit Button */\nbutton[type=\"submit\"],\n.submit-button,\n[class*=\"submit\"] {\n  width: 100%; /* FIXED: removed 880px fixed width */\n  height: var(--submit-btn-height);\n  background: var(--hot-orange);\n  color: var(--white-chaos);\n  border: 5px solid var(--black-void);\n  border-radius: 0;\n  font-size: 1.3rem; /* REDUCED from 1.5rem */\n  font-weight: bold;\n  font-family: var(--font-chaos);\n  cursor: pointer;\n  text-transform: uppercase;\n  letter-spacing: 2px; /* REDUCED from 3px */\n  margin-top: var(--wild-space);\n  transform: rotate(-0.3deg);\n  box-shadow: \n    8px 8px 0px var(--purple-madness),\n    16px 16px 0px var(--electric-blue);\n  text-shadow: 2px 2px 0px var(--black-void);\n  position: relative;\n}\n\n/* FIXED Button effects */\nbutton[type=\"submit\"]:hover {\n  background: var(--red-alert);\n  transform: rotate(0deg) scale(1.02); /* REDUCED scale */\n  box-shadow: \n    10px 10px 0px var(--neon-pink),\n    20px 20px 0px var(--toxic-green);\n}\n\nbutton[type=\"submit\"]:active {\n  transform: rotate(-0.1deg) scale(0.99);\n  box-shadow: \n    4px 4px 0px var(--purple-madness),\n    8px 8px 0px var(--electric-blue);\n}\n\n/* FIXED Error States */\n.error,\n.form-error,\n[class*=\"error\"] {\n  color: var(--white-chaos);\n  font-family: var(--font-street);\n  font-size: 0.9rem; /* REDUCED from 1rem */\n  font-weight: bold;\n  background: var(--red-alert);\n  padding: 10px 12px; /* REDUCED padding */\n  border: 3px solid var(--black-void);\n  margin-top: 8px; /* REDUCED from 10px */\n  transform: rotate(-0.2deg);\n  box-shadow: 3px 3px 0px var(--black-void);\n  text-transform: uppercase;\n}\n\n/* FIXED field decorations */\n.form-group:nth-child(2n)::before {\n  content: '⚡';\n  position: absolute;\n  top: -10px; /* REDUCED from -15px */\n  right: -10px;\n  font-size: 1.5rem; /* REDUCED from 2rem */\n  z-index: 10;\n  transform: rotate(20deg); /* REDUCED from 25deg */\n}\n\n.form-group:nth-child(3n)::after {\n  content: '🔥';\n  position: absolute;\n  bottom: -10px;\n  left: -10px;\n  font-size: 1.5rem;\n  z-index: 10;\n  transform: rotate(-20deg);\n}\n\n.form-group:nth-child(4n)::before {\n  content: '💎';\n  position: absolute;\n  top: -8px;\n  left: 50%;\n  font-size: 1.3rem;\n  z-index: 10;\n  transform: rotate(35deg);\n}\n\n/* FIXED Responsive */\n@media (max-width: 768px) {\n  .form-container {\n    padding: var(--chaos-space);\n  }\n  \n  .form-card,\n  form {\n    padding: var(--wild-space);\n    box-shadow: \n      8px 8px 0px var(--neon-pink),\n      16px 16px 0px var(--electric-blue);\n  }\n  \n  h1, h2, h3 {\n    font-size: 2rem;\n  }\n  \n  button[type=\"submit\"] {\n    height: 50px;\n    font-size: 1.1rem;\n  }\n}\n\n@media (max-width: 480px) {\n  body {\n    padding: 10px;\n  }\n  \n  .form-card,\n  form {\n    padding: var(--chaos-space);\n  }\n  \n  h1, h2, h3 {\n    font-size: 1.6rem;\n    letter-spacing: 1px;\n  }\n  \n  input, textarea, select {\n    padding: 12px;\n  }\n}\n\n/* FIXED hover effects */\ninput:hover,\ntextarea:hover,\nselect:hover {\n  border-color: var(--neon-pink);\n  transform: rotate(-0.05deg);\n}\n\n/* FIXED progress bar */\n.progress-bar {\n  width: 100%; /* FIXED: removed 880px fixed width */\n  height: 18px; /* REDUCED from 20px */\n  background: var(--white-chaos);\n  border: 3px solid var(--black-void);\n  overflow: hidden;\n  transform: rotate(0.1deg);\n  margin: 15px 0; /* ADDED margin */\n}\n\n.progress-fill {\n  height: 100%;\n  background: repeating-linear-gradient(45deg,\n    var(--toxic-green) 0px,\n    var(--toxic-green) 8px,\n    var(--neon-pink) 8px,\n    var(--neon-pink) 16px);\n}"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        -16840,
+        -25
+      ],
+      "id": "5a64a197-66af-4c9b-bf42-bd2794a6c838",
+      "name": "brain rotter",
+      "webhookId": "3b749a18-39ca-4f86-9f0d-c3de1cf8a05f"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=list 20 facts and things about that are trending and controversial about {{ $json['The Main Topic'] }}\nalways have a output of 20 listed as an output.",
+        "options": {
+          "systemMessage": "=use the web search tool provided to find something that is mentioned by input.\nuse the think tool to take time to think\n\nlist the ideas as 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 and 20.\nalways have a output of 20 things."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        -16400,
+        -25
+      ],
+      "id": "8c6bb47d-6218-45b5-958e-098147469bc6",
+      "name": "AI Agent",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.output }} == these are the facts from internet.\n\nAlways Start with Don't swipe away or what if  or did you know then continue with fact.\ncreate a stong hook in the first senctence that people can refuse to hear, something so shocking that they will always hear about the facts you have, this should be controversial to hear, always try to poke into controversey and make hindu the winner.\nmention hindism in the first sentence.\nuse  the user input and the facts given to create a script to show how hindus are advanced.\nhook should be eye opening.\ndon't label anything.\n\nthe hook should be shocking to hear to the people.\nmake sure to give the shocking fact in the first line.in the hook\n\ndon't label like \"newsflash:\" or \"Thumbnail Hook: \" or style type, just the output.\n\ncomplete story should not be bigger than {{ $('brain rotter').item.json.Duration }}\nuse this formula , per second 2 words.calculate how much you want.\n",
+        "options": {
+          "systemMessage": "=You are a scriptwriter for a powerful, fast-paced short-form video series called \"SUPREME INDIANS\" that reveals how ancient Indians were far ahead of their time in science, medicine, technology, and philosophy. Your job is to write a scroll-stopping script in a proud, confident, Gen-Z friendly style that captivates modern youth and educates them emotionally and intellectually.\n\n🔧 OBJECTIVE:\nGenerate compelling “Did You Know?”-style scripts for Instagram Reels, YouTube Shorts, or TikTok that highlight ancient Indian discoveries and how modern science is just catching up.\n\n🎬 SCRIPT STRUCTURE (Use This Format):\n1. Hook — Shocking or mysterious line (2 seconds max),Always Start with What if  or Did You know then continue.\n2. Discovery Reveal — What exactly ancient Indians did (be proud, bold)\n3. Modern Comparison — Show how today’s science is catching up or still behind\n4. Middle Script - Middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic.\n5. Cultural Pride — Reflect on India’s supreme wisdom and how advanced it was\n6. Mic Drop Ending — Short,harsh, powerful, reflective one-liner to close strong\n\n🗣 STYLE RULES:\n- Short sentences, natural flow, as if spoken out loud\n- No paragraphs, write line-by-line like spoken script\n- Avoid emojis or hashtags\n- Tone: proud,confident, slightly conspiratorial\n- Language: informal but clear (Gen-Z friendly, not academic)\n- in the middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic.\n\n✨ ADDITIONAL TECHNIQUES (Optional but Powerful):\n- Use modern analogies.\n- Use time comparisons to show gap (“in 600 BCE vs now”)\n- Add historical context like Sanskrit text names \n- Use rhetorical questions (“Still think India was behind?”)\n- Mention irony.\n- Highlight rediscovery.\n- in the middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic.\n\n🚫 DON’Ts:\n- Don’t use long academic language or full paragraphs\n- Don’t use passive tone like “India was also good at this”\n- Don’t explain like a textbook — entertain, shock, and awaken\n- don't abuse, but use harsh language to explain.\n\n\nhook should be cachy.Always Start with \"WHAT IF ( filler ) \" or \"Did You know (filler)\".\n\npick the most suitable cta from the given ones to end the video(always think before picking something) -\n1. \"Still think we were behind? Read a book.\"\n\n3. \"This isn’t pride — it’s proof. Deal with it.\"\n\n4. \"Modern science is catching up. Ancient India was always ahead.\"\n\n5. \"They renamed it discovery. We called it knowledge.\"\n\n6. \"Don’t believe me? Go search it — and prepare to be humbled.\"\n\n7. \"Keep glorifying them. We’ll keep exposing the truth.\"\n\n8. \"This isn’t mythology. It’s history they hid from you.\"\n\n9. \"Before they invented it — we documented it.\"\n\n10. \"Wake up. The West didn’t invent the future — they borrowed the past.\"\n\n⚔️ Tone Notes:\nEach hook stings with truth disguised as provocation.\nNames are chosen carefully to disarm Western historical dominance.\nUse them as openers, followed immediately by your fact-heavy script.\nIn the middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        -15820,
+        -25
+      ],
+      "id": "8cabff33-69a0-4b88-b117-fd0c205496be",
+      "name": "AI Agent1"
+    },
+    {
+      "parameters": {
+        "jsCode": "const rawOutput = $input.first().json.output;\n\nconst cleanedOutput = rawOutput\n  .replace(/<think>[\\s\\S]*?<\\/think>/gi, '') // Remove <think>...</think>\n  .replace(/\\*\\*/g, '')                      // Remove double asterisks\n  .replace(/\\*/g, '')                        // Remove single asterisks\n  .replace(/\\\\n/g, ' ')                      // Remove literal \\n (escaped newline)\n  .replace(/\\n/g, ' ')                       // Remove actual newlines\n  .replace(/\\//g, '')                        // Remove all forward slashes\n  .replace(/\"/g, '')                         // Remove double quotes\n  .replace(/'/g, '')                         // Remove single quotes\n  .replace(/-/g, ',')                        // Replace hyphens with commas\n  .replace(/\\s+/g, ' ')                      // Collapse multiple spaces\n  .trim();                                   // Trim whitespace\n\nreturn [\n  {\n    json: {\n      output: cleanedOutput\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -15460,
+        -25
+      ],
+      "id": "cdd64d15-6d45-45be-94f7-3d7cb3fde2c3",
+      "name": "Code2"
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"Title\": {\n      \"type\": \"string\",\n      \"description\": \"Short and engaging title, curiosity-driven.\"\n    },\n    \"Description\": {\n      \"type\": \"string\",\n      \"description\": \"Short description with key hashtags, hook, context, CTA, and hashtags.\"\n    },\n    \"Hook\": {\n      \"type\": \"string\",\n      \"description\": \"Introduction.\"\n    }\n  },\n  \"required\": [\"Title\", \"Description\", \"Intro\", \"MainScript\"]\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        -15100,
+        195
+      ],
+      "id": "59683c3d-a3d1-4ea0-bef7-299a937889da",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=User Input:\n{{ $json.output }}\n{{ $('Code10').item.json.topic }}\n{{ $('Code10').item.json.subtopic }}\nFacts: ",
+        "hasOutputParser": true,
+        "messages": {
+          "messageValues": [
+            {
+              "message": "=Take the user input and output in the following JSON Structure, DO NOT change or alter any of the text.description should be short and should have hashtags.\n\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"Title\": {\n      \"type\": \"string\",\n      \"description\": \"Short and engaging title,under 50 characters\"\n    },\n    \"Description\": {\n      \"type\": \"string\",\n      \"description\": \"Simple Short hasrh truth description with key hashtags, hook, context, CTA, and hashtags.\"\n    },\n    \"Hook\": {\n      \"type\": \"string\",\n      \"description\": \"hasrh truth hook mocking modern scientist\"\n    },\n  },\n  \"required\": [\"Title\", \"Description\", \"Intro\", \"MainScript\"]\n}"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.5,
+      "position": [
+        -15240,
+        -25
+      ],
+      "id": "6c839a46-f94a-472b-8f65-4fe3087839ad",
+      "name": "Output Parser 🛠"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/media/transcribe",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"media_url\": {{ JSON.stringify($json.link) }},\n  \"task\": \"transcribe\",\n  \"include_text\": true,\n  \"include_srt\": true,\n  \"include_segments\": true,\n  \"response_type\": \"direct\",\n  \"id\": \"custom-job-123\"\n}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -14220,
+        -25
+      ],
+      "id": "4cc0cbbb-ba89-4a3f-89d8-fc8037cb0841",
+      "name": "Transcribe Media",
+      "notesInFlow": true,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      },
+      "notes": "/v1/media/transcribe"
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "bucketName": "nca-toolkit",
+        "fileName": "={{ $binary.data.fileName}}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.s3",
+      "typeVersion": 1,
+      "position": [
+        -14660,
+        -25
+      ],
+      "id": "ea7af498-4d93-4056-a889-9b070527eff4",
+      "name": "S3",
+      "credentials": {
+        "s3": {
+          "id": "aGXlvhoO8gpWIi6p",
+          "name": "S3 account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "bd7d3666-a733-45f4-88cd-5be0e8bf1e0f",
+              "name": "=link",
+              "value": "=http://host.docker.internal:9000/nca-toolkit/{{ $node[\"Generate TTS\"].binary.data.fileName }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -14440,
+        -25
+      ],
+      "id": "c589237c-7675-483d-a9ab-f85e5c0e20bb",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "jsCode": "const inputData = $input.first().json.Segments;\nconst maxDuration = 2.0; // Set your desired max segment length in seconds\n\nfunction timeToSeconds(t) {\n  const [h, m, s] = t.split(/[:,]/).map(Number);\n  return h * 3600 + m * 60 + s + (parseFloat(`0.${t.split(',')[1]}`) || 0);\n}\n\nfunction secondsToTime(sec) {\n  const h = String(Math.floor(sec / 3600)).padStart(2, '0');\n  const m = String(Math.floor((sec % 3600) / 60)).padStart(2, '0');\n  const s = String(Math.floor(sec % 60)).padStart(2, '0');\n  const ms = String(Math.round((sec % 1) * 1000)).padStart(3, '0');\n  return `${h}:${m}:${s},${ms}`;\n}\n\nconst output = [];\nlet currentIndex = 1;\n\nfor (const segment of inputData) {\n  const startSec = timeToSeconds(segment.start);\n  const endSec = timeToSeconds(segment.end);\n  const duration = parseFloat((endSec - startSec).toFixed(3));\n\n  if (duration <= maxDuration) {\n    output.push({\n      index: currentIndex++,\n      start: segment.start,\n      end: segment.end,\n      text: segment.text,\n      duration: duration\n    });\n    continue;\n  }\n\n  const words = segment.text.split(/\\s+/);\n  const numChunks = Math.ceil(duration / maxDuration);\n  const wordsPerChunk = Math.ceil(words.length / numChunks);\n\n  let splitStart = startSec;\n  let pointer = 0;\n\n  while (pointer < words.length) {\n    const chunkWords = words.slice(pointer, pointer + wordsPerChunk);\n    const chunkDuration = Math.min(maxDuration, endSec - splitStart);\n    const splitEnd = splitStart + chunkDuration;\n\n    output.push({\n      index: currentIndex++,\n      start: secondsToTime(splitStart),\n      end: secondsToTime(splitEnd),\n      text: chunkWords.join(' '),\n      duration: parseFloat((splitEnd - splitStart).toFixed(3))\n    });\n\n    pointer += wordsPerChunk;\n    splitStart = splitEnd;\n  }\n}\n\nreturn [\n  {\n    json: {\n      segments: output\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -13560,
+        -25
+      ],
+      "id": "5d098d5d-a61c-4491-bb56-3253da2814ff",
+      "name": "Split into N's Scenes"
+    },
+    {
+      "parameters": {
+        "jsCode": "const inputSegments = $input.first().json.segments;\n\n// We will create a new array for merged segments\nconst mergedSegments = [];\n\nfor (let i = 0; i < inputSegments.length; i++) {\n  const current = inputSegments[i];\n\n  if (current.duration < 2 && mergedSegments.length > 0) {\n    // Merge current segment into the previous segment in mergedSegments\n\n    const prev = mergedSegments[mergedSegments.length - 1];\n\n    // Update prev segment text (add a space between)\n    prev.text = prev.text + ' ' + current.text;\n\n    // Update prev segment end time to current segment end time\n    prev.end = current.end;\n\n    // Update duration\n    const prevStartSec = timeToSeconds(prev.start);\n    const newEndSec = timeToSeconds(current.end);\n    prev.duration = parseFloat((newEndSec - prevStartSec).toFixed(3));\n\n  } else {\n    // No merge needed, just push current segment\n    mergedSegments.push({ ...current }); // clone to avoid mutation\n  }\n}\n\n// Helper function to convert time string to seconds\nfunction timeToSeconds(t) {\n  const [h, m, s] = t.split(/[:,]/).map(Number);\n  return h * 3600 + m * 60 + s + (parseFloat(`0.${t.split(',')[1]}`) || 0);\n}\n\nreturn [\n  {\n    json: {\n      segments: mergedSegments\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -13340,
+        -25
+      ],
+      "id": "2389853b-83e9-4a46-a5ee-6fd740392877",
+      "name": "Fixer2"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "segments",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -13120,
+        -25
+      ],
+      "id": "f88269da-7f20-4638-bfcd-c93c4b877616",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Heres the full script:\n{{ $('Code2').item.json.output }}\nGenerative style:{{ $('brain rotter').item.json['Generative Style'] }}\n\ntheir should be no text in the image.\n\nHere is the current scene:\nScript portion: {{ $json.text }}\nScript position: {{ $json.index }}\n\nread the full story -- {{ $('Code2').item.json.output }} and take context from previous and after the chosen part\n{{ $json.text }}, and create an image on that.\n\n\nalways reply with an output\nlimit == 850-950 character",
+        "hasOutputParser": true,
+        "messages": {
+          "messageValues": [
+            {
+              "message": "=Their should be always an output, nothing should be left blank.\nTheir should be always an output, nothing should be left blank.\n\n\nYou are an image prompt generator agent for video production. Your role is to create starting frames for a longer video by transforming script segments into visually descriptive image prompts. Each scene will be generated in a specified artistic style,realistic painting, which must be factored into the prompt to ensure consistency.  \n\n\n-------\n\n\n✅ The final output must be a  AI-ready paragraph that:\nStrictly adheres to realistic image, ensuring creativity.\nBegins with the foreground interaction and smoothly transitions into background/environment details.\nDescribes textures, lighting, sensory details, environmental motion, and emotional weight.\nFollows a structured formatting style for AI consistency.\nminimum 800 character.\nRemains under 950 characters.\n\n🔷 Rules & Guidelines for Generating Prompts\n\n✅ {{ $('brain rotter').item.json['Generative Style'] }} style, bookish style,dark themed images.\nThe viewer must feel like they are experiencing another news.\nFraming should mimic a realistic movie shot, with depth, reactivity, and presence.\n✅ World Interaction\nThe world should feel alive and responsive to the viewer’s presence,simple background, soft shadows and muted colors, \ncinematic side view, emotionally tense atmosphere.\n✅ Sensory & Cinematic Detail,simple background, soft shadows and muted colors, \ncinematic side view, emotionally tense atmosphere\n✅ use arrows or cicle to mark important parts, image can have maps to show important places, real photos of places, newpaper clippings,old real painting etc.\n\nEngage multiple senses:\n\nSight: Lighting, reflections, color, scale, shadows, movement\nTouch: Cold, heat, roughness, smoothness, wetness\nSound: Wind, echoes, gunfire, voices, waves\nSmell: Smoke, rain, sea air, incense, blood,simple background, soft shadows and dark themed images.\n\n### **IMPORTANT INSTRUCTIONS:**  \n\n- **Always** incorporate the given style into the visual description.  \n- **Never** include text in the images.\n- **Never** exceed 900 characters in your prompt.  \n- **Keep images visually compelling** – Instead of basic or static representations, focus on **dynamic compositions, dramatic angles, striking lighting, immersive textures, and environmental storytelling**.  \n- **Small subjects should have compelling micro-world narratives** – If the subject is small (e.g., a drop of water, a single key, a lone leaf), provide a **rich atmosphere**, interplay of lighting, and framing that enhances storytelling.  \n- **Focus on depth, detail, and artistic impact** rather than excessive complexity.\n\n\nA well-crafted prompt should now include:  \n\n- **Subject:** The main focus of the image.  \n- **Composition:** Use **engaging angles** (close-ups, over-the-shoulder, dynamic perspectives).  \n- **Lighting:** Prioritize dramatic effects like **backlighting, ambient lighting, simple background, soft shadows and muted colors,cinematic side view, emotionally tense atmosphere\n- **Micro-World Storytelling:** Ensure even small objects contribute to a **scene with intrigue, interaction, or emotion**.  \n- **Color Palette:** The dominant colors are vivid colors.  \n- **Mood/Atmosphere:** The emotional tone of the image.  \n- **Technical Details:** Camera effects like **bokeh, depth of field, contrast**, or lens distortion to make the image feel real,halation.  \n- **Additional Elements:** Small but meaningful details that **enhance interest without overwhelming the scene**.\n----------------\n\nPerfect! Below is a complete setup following your ✅ Structured Formatting, with 📥 Input ➜ 📤 Output examples that include:\n\n🧠 User prompt\n🎬 Output in {{ $('brain rotter').item.json['Generative Style'] }}\n🎥 Camera angle included\n🔁 Consistent reusable structure\n\n\n🟨 Examples below - \n\n🔦 1. Creeping Through a Silent Hallway (Suspense)\nPrompt:\n\n\"Dark Realistic vintage image style, a teenage boy in pajamas cautiously walking through a dim hallway at night, holding a flashlight tightly, his eyes wide with fear and suspicion, shadows stretching along the walls, one door slightly ajar ahead, the beam of light cutting through floating dust, eerie silence all around, muted color palette, cinematic low-angle side view, dramatic lighting,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🪞 2. Haunted Mirror Reflection\nPrompt:\n\n\"Stylized Realistic vintage image style horror webtoon scene, a teenage boy standing in a bathroom staring into a cracked mirror, his reflection showing a distorted version of himself with hollow eyes, steam still clinging to the glass, sweat running down his temple, dull fluorescent light flickering above, dark tiles behind him, heavy psychological tension, tight close-up from behind the boy’s shoulder, haunting, grim palette,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n📱 3. Shocked After Reading a Message\nPrompt:\n\n\"Cinematic Realistic vintage image style animation frame, a boy sitting on the edge of his bed in a dark room lit only by his phone screen, hands trembling slightly, eyes wide and mouth half-open in shock, the phone screen glows blue on his face, curtains closed behind him, messy room in shadows, full emotional focus on his stunned expression, modern psychological thriller tone, muted blues and grays,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🖼️ 4. Remembering Someone (Melancholy)\nPrompt:\n\n\"Emotional Realistic vintage image style animation scene, a young man sitting alone on the floor of his bedroom, holding an old photograph close to his chest, ambient light from the setting sun casting long shadows through the window, dust floating gently in the air, his face partially hidden but visibly emotional, soft outlines and warm tones mixed with grayish ambiance, cinematic top-down angle capturing isolation and memory,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🪑 5. Paralyzed in Fear\nPrompt:\n\n\"Realistic vintage image style horror animation style, a teenage boy sitting frozen in a chair in the corner of a dark room, eyes locked on something unseen in front of him, jaw clenched, cold sweat on his forehead, only a small lamp behind him flickering faintly, shadows stretching unnaturally across the floor, thick silence in the air, horror suspense mood, wide-angle shot from the corner of the ceiling,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🌧️ 6. Staring Out a Rainy Window\nPrompt:\n\n\"Dark emotional Realistic vintage image style, an old stone realistic statue of a demigod of india, dim room lit only by gray daylight, gentle sadness, soft pencil-like line work, melancholic storytelling frame,Realistic vintage image style,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🎒 7. Coming Home to an Empty House\nPrompt:\n\n\"Moody Realistic vintage image style, a map of india, lights off, faint outdoor light leaking in from behind, silent interior with scattered objects hinting at absence, loneliness expressed through posture and composition, cinematic side shot, blue-gray color scheme,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n--------\n\nMust - always output a prompt, if you are not understanding what to make then take reference to the full story and make a prompt for it.their should always be an output.\nMust - Their should be always an output, nothing should be left blank.\nTheir should be always an output, nothing should be left blank.\nTheir should be always an output, nothing should be left blank.\n{{ $('brain rotter').item.json['Generative Style'] }}"
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.5,
+      "position": [
+        -12900,
+        -150
+      ],
+      "id": "5b86555b-84c1-4f05-a650-4b763bf6f8ff",
+      "name": "Image Prompter V2 📷"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "destinationFieldName": "=outputprompt",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        -12540,
+        -150
+      ],
+      "id": "1322c9b5-3bc5-4fbf-893a-1ff44a99875f",
+      "name": "Aggregate1"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "fieldsToMatchString": "index",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        -11660,
+        -25
+      ],
+      "id": "bc6d7a7f-5bda-4942-8c30-0cb7e0d8f6a3",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "jsCode": "const inputItems = $input.all(); // Get all items\n\n// Reassign index values\nconst updatedItems = inputItems.map((item, i) => {\n  const json = item.json;\n\n  return {\n    json: {\n      ...json,\n      index: i + 1 // Sequential index starting from 1\n    }\n  };\n});\n\nreturn updatedItems;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -11880,
+        100
+      ],
+      "id": "dea52c5e-72f5-4f28-9666-a0c206198fe1",
+      "name": "Code6"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -11440,
+        300
+      ],
+      "id": "a02de0e5-4471-487e-9303-e9d73b6d6351",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "fields": {
+          "values": [
+            {
+              "name": "base64Image",
+              "stringValue": "={{ $json.body.data[0].b64_json }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a44fd8e4-c85a-4815-be0e-cdd6f74fa15b",
+      "name": "Base64 To String",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.1,
+      "position": [
+        -11000,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "jsonToBinary",
+        "convertAllData": false,
+        "sourceKey": "base64Image",
+        "options": {
+          "dataIsBase64": true,
+          "fileName": "image.png",
+          "mimeType": "image/png"
+        }
+      },
+      "id": "93d8cc48-549f-43ff-81d7-7e23e036ec0e",
+      "name": "Convert String to binary",
+      "type": "n8n-nodes-base.moveBinaryData",
+      "typeVersion": 1,
+      "position": [
+        -10780,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "bd7d3666-a733-45f4-88cd-5be0e8bf1e0f",
+              "name": "=link",
+              "value": "=http://host.docker.internal:9000/nca-toolkit/{{ $('Merge').item.json.index }}{{ $node[\"Convert String to binary\"].binary.data.fileName }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -10340,
+        300
+      ],
+      "id": "e331ad9b-01a4-4bbf-a670-5b5489c21db3",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "bucketName": "nca-toolkit",
+        "fileName": "={{ $('Merge').item.json.index }}{{ $binary.data.fileName}}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.s3",
+      "typeVersion": 1,
+      "position": [
+        -10560,
+        300
+      ],
+      "id": "b9db5f68-fe77-4862-862d-a2d069fee9cc",
+      "name": "S32",
+      "credentials": {
+        "s3": {
+          "id": "aGXlvhoO8gpWIi6p",
+          "name": "S3 account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/image/transform/video",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"image_url\":\"{{ $('Merge1').item.json.link }}\",\n    \"length\": {{ $('Merge1').item.json.duration }},\n    \"frame_rate\": 25,\n    \"zoom_speed\": {{ $json.number }},\n    \"id\": \"{{ $('Merge1').item.json.index }}_{{ $('Merge1').item.json.duration }}_{{ $('Merge1').item.json.end }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -10120,
+        50
+      ],
+      "id": "1fd879fd-ccfa-4947-a2ee-f21798c84f4a",
+      "name": "Create Clips",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "batchSize": "=1",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -10560,
+        0
+      ],
+      "id": "c5229cf2-d17e-4352-9d6c-1dc21d32644b",
+      "name": "Loop Over Items3"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "name": "Replace Me",
+      "typeVersion": 1,
+      "position": [
+        -11220,
+        100
+      ],
+      "id": "bf9fc240-acc9-4fc2-9023-e59e2ddcaa33"
+    },
+    {
+      "parameters": {
+        "jsCode": "// This processes the full list of input items\n// and adds an \"index\" field to each item\n\nreturn items.map((item, index) => {\n  return {\n    json: {\n      ...item.json,  // keep existing fields\n      index: index + 1  // change to (index + 1) if you want to start from 1\n    }\n  };\n});\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -11000,
+        100
+      ],
+      "id": "0bbf521a-c63a-4b8d-82ae-007dd76214bb",
+      "name": "Code7"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "fieldsToMatchString": "index",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        -10780,
+        -175
+      ],
+      "id": "8b4f6cc8-52ad-42c8-82d1-08bc66101cfa",
+      "name": "Merge1"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "name": "Replace Me1",
+      "typeVersion": 1,
+      "position": [
+        -10340,
+        -200
+      ],
+      "id": "c5bb037a-6520-4be4-96a5-42a7d75dd409"
+    },
+    {
+      "parameters": {
+        "jsCode": "// This processes the full list of input items\n// and adds an \"index\" field to each item\n\nreturn items.map((item, index) => {\n  return {\n    json: {\n      ...item.json,  // keep existing fields\n      index: index + 1  // change to (index + 1) if you want to start from 1\n    }\n  };\n});\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -10120,
+        -200
+      ],
+      "id": "d2135f1d-26a4-4387-8e81-8ddc74a356dd",
+      "name": "Code8"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "fieldsToMatchString": "index",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        -9900,
+        -300
+      ],
+      "id": "cfc06f6f-544d-4f2f-b280-5e0a5b30dd30",
+      "name": "Merge2"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/video/concatenate",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"video_urls\": {{ JSON.stringify($json.video_urls) }},\n    \"id\": {{ JSON.stringify($('Aggregate3').item.json.id[0]) }}\n}",
+        "options": {
+          "timeout": 50000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -9240,
+        -300
+      ],
+      "id": "a3d93347-855c-4054-a668-c40358730eab",
+      "name": "Combine Clips",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "response"
+            },
+            {
+              "fieldToAggregate": "duration"
+            },
+            {
+              "fieldToAggregate": "index"
+            },
+            {
+              "fieldToAggregate": "id"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        -9680,
+        -300
+      ],
+      "id": "9792d7a6-a709-48a8-ad1c-3681c35b872e",
+      "name": "Aggregate3"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/ffmpeg/compose",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"id\": \"audio-layering\",\n    \"inputs\": [\n        {\n            \"file_url\": \"{{ $json.response }}\"\n        },\n        {\n            \"file_url\": \"{{ $('Edit Fields').item.json.link }}\"\n        }\n    ],\n    \"filters\": [\n        {\n            \"filter\": \"[1:a]volume=1[outa]\"\n        }\n    ],\n    \"outputs\": [\n        {\n            \"options\": [\n                {\n                    \"option\": \"-map\",\n                    \"argument\": \"0:v\"\n                },\n                {\n                    \"option\": \"-map\",\n                    \"argument\": \"[outa]\"\n                },\n                {\n                    \"option\": \"-c:v\",\n                    \"argument\": \"copy\"\n                },\n                {\n                    \"option\": \"-c:a\",\n                    \"argument\": \"aac\"\n                }\n            ]\n        }\n    ]\n}\n",
+        "options": {
+          "timeout": 50000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -9020,
+        -300
+      ],
+      "id": "d0174f80-1e5d-4f88-8e10-56023b94acdb",
+      "name": "Combine Clips3",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/video/caption",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"video_url\": {{ JSON.stringify($json.response[0].file_url) }},\n  \"settings\": {\n    \"style\": \"word_by_word\",\n    \"line_color\": \"#FFFFFF\",\n    \"outline_color\": \"#000000\",\n    \"shadow_offset\": 2,\n    \"outline_width\": 10,\n    \"position\": \"middle_center\",\n    \"alignment\": \"center\",\n    \"font_family\": \"Arial\",\n    \"font_size\": 140,\n    \"bold\": true,\n    \"all_caps\": false,\n    \"max_words_per_line\": 2,\n    \"italic\": false,\n    \"underline\": false,\n    \"strikeout\": false\n  },\n  \"id\": \"{{ $json.id }}\"\n}\n",
+        "options": {
+          "timeout": 90000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -8800,
+        -300
+      ],
+      "id": "11fc51eb-4efd-4d98-a3b1-69248f0e0dac",
+      "name": "Create Captions",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/ffmpeg/compose",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"id\": \"{{ JSON.stringify($json.pid)}}\",\n    \"inputs\": [\n        {\n            \"file_url\": {{ JSON.stringify($json.response) }}\n        },\n        {\n            \"file_url\": \"http://host.docker.internal:9000/nca-toolkit-music/Pyramid Background Music No Copyright.mp3\"\n        }\n    ],\n    \"filters\": [\n        {\n            \"filter\": \"[1:a]aloop=loop=-1:size=2G[audio_loop];[0:a]volume=2[audio1];[audio_loop]volume=0.6[audio2];[audio1][audio2]amix=inputs=2:duration=first[outa]\"\n        }\n    ],\n    \"outputs\": [\n        {\n            \"options\": [\n                {\n                    \"option\": \"-map\",\n                    \"argument\": \"0:v\"\n                },\n                {\n                    \"option\": \"-map\",\n                    \"argument\": \"[outa]\"\n                },\n                {\n                    \"option\": \"-c:v\",\n                    \"argument\": \"copy\"\n                },\n                {\n                    \"option\": \"-c:a\",\n                    \"argument\": \"aac\"\n                }\n            ]\n        }\n    ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -8580,
+        -300
+      ],
+      "id": "7800b056-b96e-40b4-a400-54fe5ead1cb0",
+      "name": "Add Music",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Assume first item contains the binary data\nitems[0].binary.data.mimeType = 'video/mp4';\nreturn items;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -7920,
+        -300
+      ],
+      "id": "718d04f6-8fff-449e-ab38-b45f534309ba",
+      "name": "Set MimeType"
+    },
+    {
+      "parameters": {
+        "resource": "video",
+        "operation": "upload",
+        "title": "=How it is possible? 🤯😱 #facts #history",
+        "regionCode": "IN",
+        "categoryId": "27",
+        "options": {
+          "defaultLanguage": "en",
+          "description": "={{ $('Output Parser 🛠').item.json.output.Hook }} - \n{{ $('Output Parser 🛠').item.json.output.Description }} #shorts #history #shortvideo #ancientwisdom \n\n\n\nAnalysis, Myths, Legends, Classics, Literature, Stories, Storytelling, History, India, Indian, Aryans, Indo-Aryans, Vedas, Vedic, Rigveda, Upanishads, Sanskrit, Buddha, Buddhism, Historical, Indus Valley, Bronze-Age, Harappa, Mohenjo-Daro, Mohenjo Daro, Caste, Philosophy, Hinduism, Hindu, Ashoka, Chandragupta, Alexander, Siddhartha, Gautama, Mahabharata, Bhagavad Gita, Ramayana, Maurya",
+          "notifySubscribers": true,
+          "privacyStatus": "public",
+          "tags": "=Analysis, Myths, Legends, Classics, Literature, Stories, Storytelling, History, India, Indian, Aryans, Indo-Aryans, Vedas, Vedic, Rigveda, Upanishads, Sanskrit, Buddha, Buddhism, Historical, Indus Valley, Bronze-Age, Harappa, Mohenjo-Daro, Mohenjo Daro, Caste, Philosophy, Hinduism, Hindu, Ashoka, Chandragupta, Alexander, Siddhartha, Gautama, Mahabharata, Bhagavad Gita, Ramayana, Maurya"
+        }
+      },
+      "type": "n8n-nodes-base.youTube",
+      "typeVersion": 1,
+      "position": [
+        -7260,
+        -300
+      ],
+      "id": "41157a37-3f31-4c68-9f1d-c28664396ab8",
+      "name": "YouTube1",
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "RyA9x38PpTjqiPMY",
+          "name": "YouTube account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.response[0].file_url }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -8140,
+        -300
+      ],
+      "id": "cef6496e-543b-49ff-af4e-af436d0cd85a",
+      "name": "HTTP Download"
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "bucketName": "nca-toolkit",
+        "fileName": "=video_{{ $binary.data.fileName}}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.s3",
+      "typeVersion": 1,
+      "position": [
+        -7700,
+        -300
+      ],
+      "id": "e18088ce-c30f-43eb-b884-f2aff8aedadb",
+      "name": "Upload - Overwrite",
+      "credentials": {
+        "s3": {
+          "id": "aGXlvhoO8gpWIi6p",
+          "name": "S3 account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=http://host.docker.internal:9000/nca-toolkit/video_{{ $node[\"Set MimeType\"].binary.data.fileName }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -7480,
+        -300
+      ],
+      "id": "f27493fd-63db-433f-933a-5bbcf765f6fc",
+      "name": "HTTP Download1"
+    },
+    {
+      "parameters": {
+        "amount": 10
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -10120,
+        375
+      ],
+      "id": "99237ff0-8a2c-4647-8c7f-55300ccfb4df",
+      "name": "Wait1",
+      "webhookId": "0451019c-cdb1-4521-8e14-a66a92d6168c"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.together.xyz/v1/images/generations",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"model\": \"black-forest-labs/FLUX.1-schnell-Free\",\n    \"prompt\": {{ JSON.stringify($json.imageprompt) }},\n    \"width\": 576,\n    \"height\": 1024,\n    \"steps\": 4,\n    \"n\": 1,\n    \"response_format\": \"b64_json\"\n   }",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -11220,
+        300
+      ],
+      "id": "5529bfe6-ca16-40cf-9c9e-fa76f015324a",
+      "name": "HTTP - Together.ai1",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "s0AnNcEOhJC7Cj8C",
+          "name": "Together ai"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// This processes the full list of input items\n// and adds an \"index\" field to each item\n\nreturn items.map((item, index) => {\n  return {\n    json: {\n      ...item.json,  // keep existing fields\n      index: index + 1  // change to (index + 1) if you want to start from 1\n    }\n  };\n});\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -11880,
+        -150
+      ],
+      "id": "e7740cc8-ab28-42d7-bd7f-87627630617d",
+      "name": "Code9"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "outputprompt",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -12320,
+        -150
+      ],
+      "id": "a1946321-357b-4d2b-8037-cbeec93985d7",
+      "name": "Split Out1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9ccbafeb-fe50-42e6-a232-a989326b0194",
+              "name": "imageprompt",
+              "value": "={{ $json.text }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -12100,
+        -150
+      ],
+      "id": "d2c67dba-4035-47a6-bb52-2ff41d72d3a5",
+      "name": "Edit Fields3"
+    },
+    {
+      "parameters": {
+        "model": "llama3.1:latest",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -12820,
+        70
+      ],
+      "id": "de77fc1f-0dda-44af-9a14-dbe2972acbb3",
+      "name": "Ollama Chat Model3",
+      "credentials": {
+        "ollamaApi": {
+          "id": "QVQGv2CqCZZnc2Gt",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/ffmpeg/compose",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"inputs\": [\n    {\n      \"file_url\": \"{{ $json.response[0].file_url }}\"\n    }\n  ],\n  \"filters\": [\n    {\n      \"filter\": \"[0:v]trim=start=0:end=59,setpts=PTS-STARTPTS[vout];[0:a]atrim=start=0:end=59,asetpts=PTS-STARTPTS[aout]\"\n    }\n  ],\n  \"outputs\": [\n    {\n      \"options\": [\n        { \"option\": \"-map\", \"argument\": \"[vout]\" },\n        { \"option\": \"-map\", \"argument\": \"[aout]\" },\n        { \"option\": \"-c:v\", \"argument\": \"libx264\" },\n        { \"option\": \"-c:a\", \"argument\": \"aac\" }\n      ]\n    }\n  ],\n  \"metadata\": {\n    \"thumbnail\": true,\n    \"filesize\": true,\n    \"duration\": true,\n    \"bitrate\": true,\n    \"encoder\": true\n  },\n  \"id\": \"extract_clip_001\"\n}",
+        "options": {
+          "timeout": 50000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -8360,
+        -300
+      ],
+      "id": "af9e9ccd-e070-499d-9621-506da035629d",
+      "name": "Compose Clip",
+      "notesInFlow": true,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      },
+      "notes": "/v1/ffmpeg/compose"
+    },
+    {
+      "parameters": {
+        "jsCode": "const srt = $input.first().json.response.srt;\n\n// Split by double newlines between blocks\nconst blocks = srt.trim().split('\\n\\n');\n\nconst output = blocks.map(block => {\n  const lines = block.split('\\n');\n  const index = lines[0];\n  const timeRange = lines[1];\n  const text = lines.slice(2).join(' ');\n\n  // Extract start and end time\n  const [start, end] = timeRange.split(' --> ');\n\n  return {\n    json: {\n      index: parseInt(index),\n      start,\n      end,\n      text\n    }\n  };\n});\n\nreturn output;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -14000,
+        -25
+      ],
+      "id": "e3cec04d-e28c-408f-8ef8-c7766c0e4493",
+      "name": "Code3"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "destinationFieldName": "Segments",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        -13780,
+        -25
+      ],
+      "id": "6607676b-352f-48d5-91ca-eaf355a1f248",
+      "name": "Aggregate2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract the array of URLs\nconst urls = items[0].json[\"response\"] || [];\n\n// Map URLs into the required structure\nconst formattedURLs = urls.map(url => ({ \"video_url\": url }));\n\n// Return the transformed data\nreturn [{\n    json: {\n        \"video_urls\": formattedURLs\n    }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -9460,
+        -300
+      ],
+      "id": "6c414b21-d5e3-4baa-b7b3-2716d29e620f",
+      "name": "Video url to array1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Generates a random integer between 3 and 7 (inclusive)\nconst min = 4;\nconst max = 7;\nconst randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;\n\nreturn [\n  {\n    json: {\n      number: randomNumber\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -10340,
+        0
+      ],
+      "id": "849de713-3d02-4469-a755-90ea1b2ec234",
+      "name": "Code4"
+    },
+    {
+      "parameters": {
+        "jsCode": "const rawOutput = $input.first().json.output;\n\nconst cleanedOutput = rawOutput\n  .replace(/<think>[\\s\\S]*?<\\/think>/gi, '') // Remove <think>...</think>\n  .replace(/\\*\\*/g, '')                      // Remove double asterisks\n  .replace(/\\*/g, '')                        // Remove single asterisks\n  .replace(/\\\\n/g, ' ')                      // Remove literal \\n (escaped newline)\n  .replace(/\\n/g, ' ')                       // Remove actual newlines\n  .replace(/\\//g, '')                        // Remove all forward slashes\n  .replace(/\"/g, '')                         // Remove double quotes\n  .replace(/'/g, '')                         // Remove single quotes\n  .replace(/-/g, ',')                        // Replace hyphens with commas\n  .replace(/\\s+/g, ' ')                      // Collapse multiple spaces\n  .trim();                                   // Trim whitespace\n\nreturn [\n  {\n    json: {\n      output: cleanedOutput\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -16040,
+        -25
+      ],
+      "id": "c97a4795-39c1-40ca-86ab-d5f2048e74cc",
+      "name": "Code5"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:8004/tts",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "accept",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"text\": {{ JSON.stringify($('Code2').item.json.output) }},\n  \"voice_mode\": \"clone\",\n  \"predefined_voice_id\": \"\",\n  \"reference_audio_filename\": \"voice_preview_jonas - deep, commercial and dramatic.mp3\",\n  \"output_format\": \"wav\",\n  \"split_text\": true,\n  \"chunk_size\": 120,\n  \"temperature\": 0.6,\n  \"exaggeration\":0.8,\n  \"cfg_weight\": 0.3,\n  \"seed\": 0,\n  \"speed_factor\": 1,\n\"return_timestamps\": true,\n  \"language\": \"en\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -14880,
+        -25
+      ],
+      "id": "b0da3409-b4ef-44fb-b066-947d88ee950f",
+      "name": "Generate TTS",
+      "notesInFlow": true,
+      "notes": "/tts"
+    },
+    {
+      "parameters": {
+        "model": "deepseek-r1:8b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -16320,
+        195
+      ],
+      "id": "472b3cd6-dde1-4aff-aedb-285e7ed2b3ff",
+      "name": "Ollama Chat Model",
+      "credentials": {
+        "ollamaApi": {
+          "id": "QVQGv2CqCZZnc2Gt",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "mistral:7b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -15740,
+        195
+      ],
+      "id": "986a3eca-5121-4c06-aa2a-02d5ab51862a",
+      "name": "Ollama Chat Model1",
+      "credentials": {
+        "ollamaApi": {
+          "id": "QVQGv2CqCZZnc2Gt",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "qwen/qwen3-30b-a3b:free",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        -15220,
+        195
+      ],
+      "id": "a6286da4-f2d0-4419-a3f7-fafc4c9c2d0a",
+      "name": "Open Router - Deepseek v3.1",
+      "credentials": {
+        "openRouterApi": {
+          "id": "LDnXT00lfxtEam77",
+          "name": "OpenRouter account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -6820,
+        -300
+      ],
+      "id": "8a894fa9-fbd2-473d-936d-05cb71961b6c",
+      "name": "Wait",
+      "webhookId": "94083abb-490d-4d31-b9da-c1599090f110"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "respondWith": "redirect",
+        "redirectUrl": "={{ $json.uploadId }}"
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 1,
+      "position": [
+        -6600,
+        -300
+      ],
+      "id": "e2d703ab-3731-48a5-8c4a-3bd7d0080bb1",
+      "name": "Form",
+      "webhookId": "70b5049f-2d92-46d7-8c36-9f5cab1d8704"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "34808bb1-bc0b-47b8-afff-729053f744fc",
+              "name": "uploadId",
+              "value": "=https://www.youtube.com/shorts/{{ $json.uploadId }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -7040,
+        -300
+      ],
+      "id": "42781c95-a362-4a9e-96a5-38626b6cc027",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "name": "Replace Me2",
+      "typeVersion": 1,
+      "position": [
+        -16620,
+        -25
+      ],
+      "id": "632616cf-94c1-465e-abe9-c32799bfaef5"
+    }
+  ],
+  "pinData": {
+    "brain rotter": [
+      {
+        "json": {
+          "The Main Topic": "India’s history is one of the oldest and richest in the world, dating back over 5,000 years. It begins with the Indus Valley Civilization (circa 2600–1900 BCE), known for advanced urban planning in cities like Harappa and Mohenjo-Daro. Following this, the Vedic Age (1500–600 BCE) laid the foundations of Hindu philosophy, rituals, and the Sanskrit language.\r\n\r\nIndia witnessed the rise of powerful empires like the Maurya Empire under Ashoka (3rd century BCE), who embraced Buddhism, and the Gupta Empire (4th–6th century CE), known as a golden age for art, science, and mathematics.\r\n\r\nFrom the 8th century onward, Islamic invasions brought new cultures and rulers, culminating in the Delhi Sultanate and the grand Mughal Empire (1526–1857), which left a lasting impact on architecture, language, and cuisine.\r\n\r\nBy the 17th century, European trading powers arrived—most notably the British, who eventually took control and established the British Raj in 1858 after the Revolt of 1857. The Indian independence movement, led by figures like Mahatma Gandhi, Subhas Chandra Bose, and Jawaharlal Nehru, culminated in India’s independence in 1947.\r\n\r\nPost-independence, India became a democratic republic in 1950 and has since emerged as a major global power, while preserving its rich tapestry of diverse cultures, languages, and traditions.",
+          "Duration": "1 Minute",
+          "Generative Style": "Disney Pixar",
+          "submittedAt": "2025-07-20T15:18:13.161-04:00",
+          "formMode": "test"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent1": {
+      "main": [
+        [
+          {
+            "node": "Code2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code2": {
+      "main": [
+        [
+          {
+            "node": "Output Parser 🛠",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Output Parser 🛠",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Output Parser 🛠": {
+      "main": [
+        [
+          {
+            "node": "Generate TTS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Transcribe Media": {
+      "main": [
+        [
+          {
+            "node": "Code3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "S3": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Transcribe Media",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split into N's Scenes": {
+      "main": [
+        [
+          {
+            "node": "Fixer2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fixer2": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Image Prompter V2 📷",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Code6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Image Prompter V2 📷": {
+      "main": [
+        [
+          {
+            "node": "Aggregate1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate1": {
+      "main": [
+        [
+          {
+            "node": "Split Out1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code6": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "Replace Me",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP - Together.ai1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Base64 To String": {
+      "main": [
+        [
+          {
+            "node": "Convert String to binary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert String to binary": {
+      "main": [
+        [
+          {
+            "node": "S32",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "S32": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Clips": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items3": {
+      "main": [
+        [
+          {
+            "node": "Replace Me1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Code4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replace Me": {
+      "main": [
+        [
+          {
+            "node": "Code7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code7": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items3",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replace Me1": {
+      "main": [
+        [
+          {
+            "node": "Code8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code8": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge2": {
+      "main": [
+        [
+          {
+            "node": "Aggregate3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Combine Clips": {
+      "main": [
+        [
+          {
+            "node": "Combine Clips3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate3": {
+      "main": [
+        [
+          {
+            "node": "Video url to array1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Combine Clips3": {
+      "main": [
+        [
+          {
+            "node": "Create Captions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Captions": {
+      "main": [
+        [
+          {
+            "node": "Add Music",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add Music": {
+      "main": [
+        [
+          {
+            "node": "Compose Clip",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set MimeType": {
+      "main": [
+        [
+          {
+            "node": "Upload - Overwrite",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Download": {
+      "main": [
+        [
+          {
+            "node": "Set MimeType",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload - Overwrite": {
+      "main": [
+        [
+          {
+            "node": "HTTP Download1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Download1": {
+      "main": [
+        [
+          {
+            "node": "YouTube1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP - Together.ai1": {
+      "main": [
+        [
+          {
+            "node": "Base64 To String",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code9": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Code9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Image Prompter V2 📷",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compose Clip": {
+      "main": [
+        [
+          {
+            "node": "HTTP Download",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code3": {
+      "main": [
+        [
+          {
+            "node": "Aggregate2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate2": {
+      "main": [
+        [
+          {
+            "node": "Split into N's Scenes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Video url to array1": {
+      "main": [
+        [
+          {
+            "node": "Combine Clips",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code4": {
+      "main": [
+        [
+          {
+            "node": "Create Clips",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate TTS": {
+      "main": [
+        [
+          {
+            "node": "S3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Open Router - Deepseek v3.1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Output Parser 🛠",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "brain rotter": {
+      "main": [
+        [
+          {
+            "node": "Replace Me2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Form",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replace Me2": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "dd329382-a490-4e7c-b5f6-f2fb7dc08331",
+  "meta": {
+    "instanceId": "5cc0498e4c4648fe5fcc14e1fba628e63e36e1dc801a3fe4ac7b2612c7e46c39"
+  },
+  "id": "MNWVZW5z4Vi9m3dD",
+  "tags": []
+}
