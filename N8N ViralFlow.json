@@ -1,10 +1,10 @@
 {
-  "name": "Github Project",
+  "name": "N8N VIRALflow",
   "nodes": [
     {
       "parameters": {
-        "formTitle": "Brain Rot 5000",
-        "formDescription": "=Brain rot is a colloquial term that refers to a perceived decline in cognitive abilities, attention span, and critical thinking due to prolonged exposure to overstimulating, unproductive, or low-effort digital content.",
+        "formTitle": "n8n ViralFlow",
+        "formDescription": "=A fully automated n8n-based pipeline that transforms user input into short, scroll‑stopping videos with hooks, dynamic visuals, and dramatic TTS narration and autmatically uploads it on their Youtube.",
         "formFields": {
           "values": [
             {
@@ -84,8 +84,8 @@
       "type": "n8n-nodes-base.formTrigger",
       "typeVersion": 2.2,
       "position": [
-        -16840,
-        -25
+        -16940,
+        -20
       ],
       "id": "5a64a197-66af-4c9b-bf42-bd2794a6c838",
       "name": "brain rotter",
@@ -1181,19 +1181,7 @@
       "id": "632616cf-94c1-465e-abe9-c32799bfaef5"
     }
   ],
-  "pinData": {
-    "brain rotter": [
-      {
-        "json": {
-          "The Main Topic": "India’s history is one of the oldest and richest in the world, dating back over 5,000 years. It begins with the Indus Valley Civilization (circa 2600–1900 BCE), known for advanced urban planning in cities like Harappa and Mohenjo-Daro. Following this, the Vedic Age (1500–600 BCE) laid the foundations of Hindu philosophy, rituals, and the Sanskrit language.\r\n\r\nIndia witnessed the rise of powerful empires like the Maurya Empire under Ashoka (3rd century BCE), who embraced Buddhism, and the Gupta Empire (4th–6th century CE), known as a golden age for art, science, and mathematics.\r\n\r\nFrom the 8th century onward, Islamic invasions brought new cultures and rulers, culminating in the Delhi Sultanate and the grand Mughal Empire (1526–1857), which left a lasting impact on architecture, language, and cuisine.\r\n\r\nBy the 17th century, European trading powers arrived—most notably the British, who eventually took control and established the British Raj in 1858 after the Revolt of 1857. The Indian independence movement, led by figures like Mahatma Gandhi, Subhas Chandra Bose, and Jawaharlal Nehru, culminated in India’s independence in 1947.\r\n\r\nPost-independence, India became a democratic republic in 1950 and has since emerged as a major global power, while preserving its rich tapestry of diverse cultures, languages, and traditions.",
-          "Duration": "1 Minute",
-          "Generative Style": "Disney Pixar",
-          "submittedAt": "2025-07-20T15:18:13.161-04:00",
-          "formMode": "test"
-        }
-      }
-    ]
-  },
+  "pinData": {},
   "connections": {
     "AI Agent": {
       "main": [
@@ -1867,7 +1855,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "dd329382-a490-4e7c-b5f6-f2fb7dc08331",
+  "versionId": "1ed4de7e-a8eb-4248-86f7-cb6e5d75e323",
   "meta": {
     "instanceId": "5cc0498e4c4648fe5fcc14e1fba628e63e36e1dc801a3fe4ac7b2612c7e46c39"
   },
