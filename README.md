@@ -146,7 +146,7 @@ Learn how to install and get started with each component:
 
 ---
 
-##⚖️ Disclaimer
+## ⚖️ Disclaimer
 - **This pipeline is for educational/demo purposes. It uses publicly available AI models and services. Results may vary; always validate before publishing.**
 
 
